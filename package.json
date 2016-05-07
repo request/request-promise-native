@@ -1,0 +1,32 @@
+{
+  "name": "request-promise-native",
+  "version": "0.0.0",
+  "description": "The simplified HTTP request client 'request' with Promise support. Powered by native ES6 promises.",
+  "keywords": [
+    "xhr",
+    "http",
+    "https",
+    "promise",
+    "request",
+    "then",
+    "thenable",
+    "native"
+  ],
+  "main": "./lib/rp.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/request/request-promise-native.git"
+  },
+  "author": "Nicolai Kamenzky (https://github.com/analog-nico)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/request/request-promise-native/issues"
+  },
+  "homepage": "https://github.com/request/request-promise-native#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

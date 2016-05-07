@@ -1,0 +1,12 @@
+/.idea/
+/coverage/
+/test/
+
+/.editorconfig
+/.eslintrc.json
+/.gitignore
+/.travis.yml
+/gulpfile.js
+
+.DS_Store
+npm-debug.log
