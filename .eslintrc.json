@@ -1,0 +1,93 @@
+{
+  "root": true,
+  "parser": "espree",
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script",
+    "ecmaFeatures": {}
+  },
+  "plugins": [],
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "Promise": false
+  },
+  "rules": {
+
+    // Possible Errors (fully reviewed 2016-05-04)
+
+    "comma-dangle": [2, "never"],
+    "no-cond-assign": [2, "except-parens"],
+    "no-console": 0,
+    "no-constant-condition": 2,
+    "no-control-regex": 2,
+    "no-debugger": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 2,
+    "no-empty": [2, { "allowEmptyCatch": false }],
+    "no-empty-character-class": 2,
+    "no-ex-assign": 2,
+    "no-extra-boolean-cast": 2,
+    "no-extra-parens": [2, "all"],
+    "no-extra-semi": 2,
+    "no-func-assign": 2,
+    "no-inner-declarations": [2, "both"],
+    "no-invalid-regexp": 2,
+    "no-irregular-whitespace": [2, { "skipComments": false }],
+    "no-negated-in-lhs": 2,
+    "no-obj-calls": 2,
+    "no-regex-spaces": 2,
+    "no-sparse-arrays": 2,
+    "no-unexpected-multiline": 2,
+    "no-unreachable": 2,
+    "no-unsafe-finally": 2,
+    "use-isnan": 2,
+    "valid-jsdoc": 0,
+    "valid-typeof": 2,
+
+    // Best Practices
+
+    "accessor-pairs": [2, { "setWithoutGet": false, "getWithoutSet": false }],
+    "no-magic-numbers": [2, { "ignore": [0,1], "ignoreArrayIndexes": true, "enforceConst": true, "detectObjects": true }],
+
+    // Strict Mode (fully reviewed 2016-05-04)
+
+    "strict": [2, "safe"],
+
+    // Variables (fully reviewed 2016-05-04)
+
+    "init-declarations": [2, "always"],
+    "no-catch-shadow": 0,
+    "no-delete-var": 2,
+    "no-label-var": 2,
+    "no-restricted-globals": 0,
+    "no-shadow": [2, { "builtinGlobals": false, "hoist": "all", "allow": [] }],
+    "no-shadow-restricted-names": 2,
+    "no-undef": [2, { "typeof": true }],
+    "no-undef-init": 2,
+    "no-undefined": 2,
+    "no-unused-vars": [2, { "vars": "local", "args": "none", "caughtErrors": "none" }],
+    "no-use-before-define": [2, { "functions": false, "classes": true }],
+
+    // Node.js and CommonJS (fully reviewed 2016-05-04)
+
+    "callback-return": 0,
+    "global-require": 0,
+    "handle-callback-err": 2,
+    "no-mixed-requires": 0,
+    "no-new-require": 2,
+    "no-path-concat": 2,
+    "no-process-env": 2,
+    "no-process-exit": 2,
+    "no-restricted-modules": 0,
+    "no-sync": 2,
+
+    // Stylistic Issues
+
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": false }],
+    "semi": [2, "always"]
+
+  }
+}
