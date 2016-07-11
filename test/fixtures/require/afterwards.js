@@ -1,6 +1,6 @@
 'use strict';
 
-var rp = require('../../../lib/rp.js');
+var rp = require('../../../');
 var request = require('request');
 
 var rpHasThen = rp('http://localhost:4000/200').then !== undefined;

@@ -1,7 +1,7 @@
 'use strict';
 
 var request1 = require('request');
-var rp = require('../../../lib/rp.js');
+var rp = require('../../../');
 var request2 = require('request');
 
 var request1HasNoThen = request1('http://localhost:4000/200').then === undefined;
