@@ -1,9 +1,9 @@
 'use strict';
 
 var childProcess = require('child_process'),
-    // errors = require('../../errors.js'),
+    errors = require('../../errors'),
     path = require('path'),
-    // rp = require('../../lib/rp.js'),
+    rp = require('../../'),
     startServer = require('../fixtures/server.js');
 
 
@@ -23,6 +23,48 @@ describe('Request-Promise-Native', function () {
     after(function (done) {
 
         stopServer(done);
+
+    });
+
+    describe('should expose', function () {
+
+        it('.then(...)', function (done) {
+
+            rp('http://localhost:4000/200')
+                .then(function (body) {
+                    expect(body).to.eql('GET /200');
+                    done();
+                })
+                .catch(function (err) {
+                    done(err);
+                });
+
+        });
+
+        it('.catch(...) and the error types', function (done) {
+
+            rp('http://localhost:4000/404')
+                .catch(function (err) {
+                    expect(err instanceof errors.StatusCodeError).to.eql(true);
+                    return 'catch called';
+                })
+                .then(function (info) {
+                    expect(info).to.eql('catch called');
+                    done();
+                })
+                .catch(function (err) {
+                    done(err);
+                });
+
+        });
+
+        it('.promise() returning a native ES6 promise', function () {
+
+            var p = rp('http://localhost:4000/200').promise();
+
+            expect(p instanceof Promise).to.eql(true);
+
+        });
 
     });
 
