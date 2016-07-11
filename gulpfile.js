@@ -11,14 +11,13 @@ var eslint = require('gulp-eslint');
 var _ = require('lodash');
 
 var chai = require('chai');
-chai.use(require('chai-as-promised'));
 global.expect = chai.expect;
 
 
 var paths = {
     libJsFiles: ['./lib/**/*.js', './errors.js'],
     specFiles: './test/spec/**/*.js',
-    fixtureFiles: './test/fixtures/**/*.txt',
+    fixtureFiles: './test/fixtures/**/*.js',
     gulpfile: './gulpfile.js',
     eslintrc: './.eslintrc.json'
 };
@@ -54,7 +53,8 @@ gulp.task('lint', function () {
     return gulp.src(_.flatten([
         paths.libJsFiles,
         paths.gulpfile,
-        // paths.specFiles,
+        paths.specFiles,
+        paths.fixtureFiles,
         paths.gulpfile
     ]))
         .pipe(eslint())
