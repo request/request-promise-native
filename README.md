@@ -10,7 +10,22 @@
 [![Dependency Status](https://img.shields.io/gemnasium/request/request-promise-native.svg?style=flat-square)](https://gemnasium.com/github.com/request/request-promise-native)
 [![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-native/badge.svg?style=flat-square)](https://snyk.io/test/npm/request-promise-native)
 
-This package will shortly become a package similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but will use native ES6 promises.
+This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses native ES6 promises.
+
+Please refer to the [`request-promise` documentation](https://www.npmjs.com/package/request-promise). Everything applies to `request-promise-native` except the following:
+- Instead of using Bluebird promises this library uses native ES6 promises.
+- Mind that native ES6 promises have less features than Bluebird promises. In particular, the `.finally(...)` method is not available.
+
+## Installation
+
+This module is installed via npm:
+
+```
+npm install --save request
+npm install --save request-promise-native
+```
+
+`request` is defined as a peer-dependency and thus has to be installed separately.
 
 ## Contributing
 
