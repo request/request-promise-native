@@ -49,6 +49,8 @@ If you want to debug a test you should use `gulp test-without-coverage` to run a
 
 ## Change History
 
+- v1.0.2 (2016-07-18)
+    - Fix for using with module bundlers like Webpack and Browserify
 - v1.0.1 (2016-07-17)
     - Fixed `@request/promise-core` version for safer versioning
 - v1.0.0 (2016-07-15)
