@@ -49,6 +49,8 @@ If you want to debug a test you should use `gulp test-without-coverage` to run a
 
 ## Change History
 
+- v1.0.1 (2016-07-17)
+    - Fixed `@request/promise-core` version for safer versioning
 - v1.0.0 (2016-07-15)
     - Initial version similar to [`request-promise`](https://www.npmjs.com/package/request-promise) v4
 
