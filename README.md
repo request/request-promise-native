@@ -4,11 +4,11 @@
 
 # Request-Promise-Native
 
-[![Gitter](https://img.shields.io/badge/gitter-join_chat-blue.svg?style=flat-square)](https://gitter.im/request/request-promise?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://img.shields.io/travis/request/request-promise-native/master.svg?style=flat-square)](https://travis-ci.org/request/request-promise-native)
-[![Coverage Status](https://img.shields.io/coveralls/request/request-promise-native.svg?style=flat-square)](https://coveralls.io/r/request/request-promise-native)
-[![Dependency Status](https://img.shields.io/gemnasium/request/request-promise-native.svg?style=flat-square)](https://gemnasium.com/github.com/request/request-promise-native)
-[![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-native/badge.svg?style=flat-square)](https://snyk.io/test/npm/request-promise-native)
+[![Gitter](https://img.shields.io/badge/gitter-join_chat-blue.svg?style=flat-square&maxAge=2592000)](https://gitter.im/request/request-promise?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://img.shields.io/travis/request/request-promise-native/master.svg?style=flat-square&maxAge=2592000)](https://travis-ci.org/request/request-promise-native)
+[![Coverage Status](https://img.shields.io/coveralls/request/request-promise-native.svg?style=flat-square&maxAge=2592000)](https://coveralls.io/r/request/request-promise-native)
+[![Dependency Status](https://img.shields.io/david/request/request-promise-native.svg?style=flat-square&maxAge=2592000)](https://david-dm.org/request/request-promise-native)
+[![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-native/badge.svg?style=flat-square&maxAge=2592000)](https://snyk.io/test/npm/request-promise-native)
 
 This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses native ES6 promises.
 
