@@ -27,8 +27,6 @@ npm install --save request-promise-native
 
 `request` is defined as a peer-dependency and thus has to be installed separately.
 
-**Note for NPM proxy users:** `request-promise-native` depends on `@request/promise-core` and downloading such [scoped packages](https://www.npmjs.org/doc/misc/npm-scope.html) seems to be a bit of a challenge for NPM proxies like [`sinopia`](https://github.com/rlidwka/sinopia) or [Artifactory](https://www.jfrog.com/artifactory/). If your `npm install` results in a 404 please read [this issue](https://github.com/request/request-promise/issues/137).
-
 ## Migration from `request-promise` to `request-promise-native`
 
 1. Go through the [migration instructions](https://github.com/request/request-promise#migration-from-v3-to-v4) to upgrade to `request-promise` v4.
@@ -51,6 +49,8 @@ If you want to debug a test you should use `gulp test-without-coverage` to run a
 
 ## Change History
 
+- v1.0.3 (2016-08-08)
+    - Renamed internally used package `@request/promise-core` to `request-promise-core` because there where [too](https://github.com/request/request-promise/issues/137) [many](https://github.com/request/request-promise/issues/141) issues with the scoped package name
 - v1.0.2 (2016-07-18)
     - Fix for using with module bundlers like Webpack and Browserify
 - v1.0.1 (2016-07-17)
