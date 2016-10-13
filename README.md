@@ -14,7 +14,7 @@ This package is similar to [`request-promise`](https://www.npmjs.com/package/req
 
 Please refer to the [`request-promise` documentation](https://www.npmjs.com/package/request-promise). Everything applies to `request-promise-native` except the following:
 - Instead of using Bluebird promises this library uses native ES6 promises.
-- Mind that native ES6 promises have less features than Bluebird promises. In particular, the `.finally(...)` method is not available.
+- Mind that native ES6 promises have fewer features than Bluebird promises do. In particular, the `.finally(...)` method is not available.
 
 ## Installation
 
