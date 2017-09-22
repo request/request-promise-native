@@ -35,7 +35,7 @@
   "dependencies": {
     "request-promise-core": "1.1.1",
     "stealthy-require": "^1.1.0",
-    "tough-cookie": ">=2.3.0"
+    "tough-cookie": ">=2.3.3"
   },
   "peerDependencies": {
     "request": "^2.34"
