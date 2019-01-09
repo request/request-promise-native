@@ -34,11 +34,11 @@
   },
   "dependencies": {
     "request-promise-core": "1.1.1",
-    "stealthy-require": "^1.1.0",
-    "tough-cookie": ">=2.3.3"
+    "stealthy-require": "^1.1.1",
+    "tough-cookie": "^2.5.0"
   },
   "peerDependencies": {
-    "request": "^2.34"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "body-parser": "~1.15.2",
