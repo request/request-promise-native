@@ -38,7 +38,7 @@
     "tough-cookie": "^2.5.0"
   },
   "peerDependencies": {
-    "request": "^2.88.0"
+    "request": "^2.34"
   },
   "devDependencies": {
     "body-parser": "~1.15.2",
