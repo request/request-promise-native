@@ -10,11 +10,11 @@
 [![Dependency Status](https://img.shields.io/david/request/request-promise-native.svg?style=flat-square&maxAge=2592000)](https://david-dm.org/request/request-promise-native)
 [![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-native/badge.svg?style=flat-square&maxAge=2592000)](https://snyk.io/test/npm/request-promise-native)
 
-This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses native ES6 promises.
+This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses native ES6+ promises.
 
 Please refer to the [`request-promise` documentation](https://www.npmjs.com/package/request-promise). Everything applies to `request-promise-native` except the following:
-- Instead of using Bluebird promises this library uses native ES6 promises.
-- Mind that native ES6 promises have fewer features than Bluebird promises do. In particular, the `.finally(...)` method is not available.
+- Instead of using Bluebird promises this library uses native ES6+ promises.
+- Native ES6+ promises may have fewer features than Bluebird promises do. In particular, the `.finally(...)` method was not included until Node v10.
 
 ## Installation
 
